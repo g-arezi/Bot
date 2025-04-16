@@ -45,8 +45,6 @@ client.on("ready", () => {
 //BOT começa a partir daqui!
 
 
-
-
 client.on("message", async message => {
   if(message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -461,7 +459,7 @@ if (command === "profilebot"){
   const membros = message.guild.memberCount;
   let barry = client.users.get('284466671257780237')
   let autor = message.author
- const Gsa = new Discord.RichEmbed()
+  const Gsa = new Discord.RichEmbed()
  .setTitle('GsaBot v2.0')
  .setDescription('**Olá Eu sou um bot de Administração e Musica**')
  .setThumbnail(client.user.avatarURL)
